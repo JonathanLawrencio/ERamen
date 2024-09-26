@@ -1,0 +1,660 @@
+@font-face {
+  font-family: myFont;
+  src: url(./aset/japanesse.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff4d8;
+}
+
+/* navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #780000;
+  color: white;
+  font-family: myFont;
+  box-shadow: 0px 10px 7px rgb(133, 133, 133);
+}
+
+/* logo */
+.brand-title {
+  margin-top: px;
+  float: left;
+  width: 89px;
+  height: 45px;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  /* menghapus bulatan list */
+  list-style: none;
+}
+
+.navbar-links li a {
+  /* menghapus garis bawah */
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+/* saat nge hover mouse */
+.navbar-links li:hover {
+  background-color: rgb(27, 27, 27);
+  border-radius: 8px;
+}
+
+/* hamburger menu */
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  /* menampilkan tampilan default, jika dikecilkan maka baru akan keluar */
+  display: none;
+  /* agar bertumpuk menjadi tiga */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* ===============best seller banner=============== */
+#best-seller {
+  width: 350px;
+  height: 580px;
+  background-color: black;
+  margin-left: 80px;
+  padding-top: 10px;
+  padding-right: 0%;
+  box-shadow: 0px 10px 5px rgb(137, 137, 137);
+}
+
+h1 {
+  color: white;
+  margin-left: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: myFont;
+}
+
+.miso-ramen {
+  width: 550px;
+  padding: 0px;
+  height: 500px;
+  margin-top: -45px;
+  margin-left: -96px;
+}
+
+.harga-miso {
+  color: white;
+  margin-top: -50px;
+  margin-left: 129px;
+  padding: 0px;
+  font-family: myFont;
+}
+
+.new-menu {
+  margin-left: 820px;
+  margin-top: -574px;
+  font-size: 30px;
+  text-shadow: 0px 3px 2px rgb(145, 145, 145);
+  font-family: myFont;
+}
+
+/* ===============ebi tempura=============== */
+/* kotak hitam */
+.ebi-tempura {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 47px;
+  margin-left: 500px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 5px rgb(137, 137, 137);
+}
+
+.gambar-ebi {
+  width: 157px;
+  margin-left: -70px;
+  margin-top: -60px;
+}
+
+.harga-tempura {
+  color: white;
+  margin-left: 55px;
+  margin-top: -20px;
+  padding: 0px;
+  font-family: myFont;
+}
+
+/* ===============PORK BELLY=============== */
+/* kotak hitam */
+.pork {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin-top: -199px;
+  margin-left: 810px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 5px rgb(137, 137, 137);
+}
+
+.gambar-pork {
+  width: 137px;
+  margin-left: -70px;
+  margin-top: -47px;
+}
+
+.harga-pork {
+  color: white;
+  margin-left: 55px;
+  margin-top: -20px;
+  padding: 0px;
+  font-family: myFont;
+}
+
+/* ===============chicken ramen===============*/
+/* kotak hitam */
+.chicken {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin-top: -199px;
+  margin-left: 1110px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 5px rgb(137, 137, 137);
+}
+
+.gambar-chicken {
+  width: 237px;
+  margin-left: -120px;
+  margin-top: -60px;
+}
+
+.harga-chicken {
+  color: white;
+  margin-left: 55px;
+  margin-top: -20px;
+  padding: 0px;
+  font-family: myFont;
+}
+
+/* ===============spicy ramen===============*/
+/* kotak hitam */
+.spicy {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin-top: 76px;
+  margin-left: 500px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 5px rgb(137, 137, 137);
+}
+
+.gambar-spicy {
+  width: 164px;
+  margin-left: -86px;
+  margin-top: -60px;
+}
+
+.harga-spicy {
+  color: white;
+  margin-left: 55px;
+  margin-top: -20px;
+  padding: 0px;
+  font-family: myFont;
+}
+
+/* ===============shoyu ramen===============*/
+/* kotak hitam */
+.shoyu {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin-top: -200px;
+  margin-left: 810px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 5px rgb(137, 137, 137);
+}
+
+.gambar-shoyu {
+  width: 133px;
+  margin-left: -61px;
+  margin-top: -50px;
+}
+
+.harga-shoyu {
+  color: white;
+  margin-left: 55px;
+  margin-top: -20px;
+  padding: 0px;
+  font-family: myFont;
+}
+
+/* ===============vegan ramen===============*/
+/* kotak hitam */
+.vegan {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin-top: -200px;
+  margin-left: 1110px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 5px rgb(137, 137, 137);
+}
+
+.gambar-vegan {
+  width: 153px;
+  margin-left: -71px;
+  margin-top: -100px;
+}
+
+.harga-vegan {
+  color: white;
+  margin-left: 55px;
+  margin-top: -70px;
+  padding: 0px;
+  font-family: myFont;
+}
+
+.special {
+  color: black;
+  margin-top: -50px;
+  font-size: 20px;
+  margin-left: 80px;
+  margin-top: 10px;
+  font-family: myFont;
+}
+
+/* ===============ad by1g1=============== */
+.buy1get1 {
+  width: 1330px;
+  height: 195px;
+  background-color: black;
+  margin-left: 80px;
+  border-radius: 10px;
+  margin-top: -27px;
+  padding: 0px;
+  box-shadow: 0px 10px 5px rgb(137, 137, 137);
+}
+
+.promo {
+  width: 380px;
+  margin-top: 10px;
+}
+
+.tambah {
+  color: white;
+  font-size: 60px;
+  margin-top: -140px;
+  margin-left: 180px;
+  padding: 0px;
+  font-family: myFont;
+}
+
+.b1g1 {
+  color: white;
+  font-size: 64px;
+  margin-left: 500px;
+  margin-top: -150px;
+  font-family: myFont;
+}
+
+.dibawah {
+  color: white;
+  font-size: 24px;
+  margin-left: 500px;
+  margin-top: -60px;
+  font-family: myFont;
+}
+/* footer */
+footer {
+  text-align: center;
+  background-color: #780000;
+  margin-top: 30px;
+  color: white;
+  font-family: "poppins";
+}
+
+/* @media queries berguna jika kondisi memenuhi 
+maka codingan didalamnnya akan dijalankan */
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 80.5%;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    /* mengubah tampilan menjadi kebawah */
+    flex-direction: column;
+    /* sejajarkan ke kiri */
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  #best-seller {
+    position: relative;
+    width: 215px;
+    height: 706px;
+    background-color: black;
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-right: 0%;
+    box-shadow: 0px 10px 5px rgb(137, 137, 137);
+  }
+
+  h1 {
+    color: white;
+    margin-left: 40px;
+    margin-top: 140px;
+    margin-bottom: 0px;
+    font-family: myFont;
+    font-size: 20px;
+  }
+  .miso-ramen {
+    width: 338px;
+    padding: 0px;
+    height: 300px;
+    margin-top: -20px;
+    margin-left: -60px;
+  }
+  .harga-miso {
+    color: white;
+    margin-top: -30px;
+    margin-left: 72px;
+    padding: 0px;
+    font-family: myFont;
+    font-size: 15px;
+  }
+  menu {
+    position: relative;
+    top: -255px;
+    left: -40px;
+  }
+  .new-menu {
+    margin-left: 420px;
+    margin-top: -447px;
+    font-size: 30px;
+    text-shadow: 0px 3px 2px rgb(145, 145, 145);
+    font-family: myFont;
+  }
+  /* ===============ebi tempura=============== */
+  /* kotak hitam */
+ 
+  .ebi-tempura {
+    width: 123px;
+    height: 123px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 57px;
+    margin-left: 340px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 5px rgb(137, 137, 137);
+  }
+  .gambar-ebi {
+    width: 110px;
+    margin-left: -45px;
+    margin-top: -60px;
+  }
+  .harga-tempura {
+    color: white;
+    margin-left: 25px;
+    margin-top: -20px;
+    padding: 0px;
+    font-family: myFont;
+  }
+  /* ===============PORK BELLY=============== */
+  /* kotak hitam */
+  .pork {
+    width: 123px;
+    height: 123px;
+    background-color: black;
+    margin-top: -123px;
+    margin-left: 555px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 5px rgb(137, 137, 137);
+  }
+
+  .gambar-pork {
+    width: 95px;
+    margin-left: -45px;
+    margin-top: -48px;
+  }
+
+  .harga-pork {
+    color: white;
+    margin-left: 30px;
+    margin-top: -20px;
+    padding: 0px;
+    font-family: myFont;
+  }
+  /* ===============chicken ramen===============*/
+  /* kotak hitam */
+  chicken {
+    position: relative;
+    top: 230px;
+    left: -280px;
+  }
+  .chicken {
+    width: 123px;
+    height: 123px;
+    background-color: black;
+    margin-top: -123px;
+    margin-left: 620px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 5px rgb(137, 137, 137);
+  }
+
+  .gambar-chicken {
+    width: 160px;
+    margin-left: -80px;
+    margin-top: -55px;
+  }
+
+  .harga-chicken {
+    color: white;
+    margin-left: 27px;
+    margin-top: -30px;
+    padding: 0px;
+    font-family: myFont;
+  }
+
+  /* ===============spicy ramen===============*/
+  /* kotak hitam */
+
+  .spicy {
+    width: 123px;
+    height: 123px;
+    background-color: black;
+    margin-top: 107px;
+    margin-left: 555px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 5px rgb(137, 137, 137);
+  }
+
+  .gambar-spicy {
+    width: 114px;
+    margin-left: -56px;
+    margin-top: -50px;
+  }
+
+  .harga-spicy {
+    color: white;
+    margin-left: 35px;
+    margin-top: -26px;
+    padding: 0px;
+    font-family: myFont;
+  }
+
+  /* ===============shoyu ramen===============*/
+  /* kotak hitam */
+  shoyu {
+    position: relative;
+    top: 230px;
+    left: -115px;
+  }
+  .shoyu {
+    width: 123px;
+    height: 123px;
+    background-color: black;
+    margin-top: -123px;
+    margin-left: 455px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 5px rgb(137, 137, 137);
+  }
+
+  .gambar-shoyu {
+    width: 93px;
+    margin-left: -41px;
+    margin-top: -45px;
+  }
+
+  .harga-shoyu {
+    color: white;
+    margin-left: 25px;
+    margin-top: -25px;
+    padding: 0px;
+    font-family: myFont;
+  }
+
+  /* ===============vegan ramen===============*/
+  /* kotak hitam */
+  vegan {
+    position: relative;
+    top: 230px;
+    left: -65px;
+  }
+  .vegan {
+    width: 123px;
+    height: 123px;
+    background-color: black;
+    margin-top: -123px;
+    margin-left: 620px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 5px rgb(137, 137, 137);
+  }
+
+  .gambar-vegan {
+    width: 110px;
+    margin-left: -46px;
+    margin-top: -83px;
+  }
+
+  .harga-vegan {
+    color: white;
+    margin-left: 35px;
+    margin-top: -60px;
+    padding: 0px;
+    font-family: myFont;
+  }
+  /* special offer */
+  special {
+    position: relative;
+    top: px;
+    left: 5px;
+  }
+  .special {
+    color: black;
+    margin-top: -50px;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-family: myFont;
+  }
+
+  /* ===============ad by1g1=============== */
+  .buy1get1 {
+    width: 718px;
+    height: 119px;
+    background-color: black;
+    margin-left: 22px;
+    border-radius: 10px;
+    margin-top: -27px;
+    box-shadow: 0px 10px 5px rgb(137, 137, 137);
+  }
+
+  .promo {
+    width: 190px;
+    margin-top: 10px;
+  }
+
+  .tambah {
+    color: white;
+    font-size: 30px;
+    margin-top: -70px;
+    margin-left: 89px;
+    font-family: myFont;
+  }
+
+  .b1g1 {
+    color: white;
+    font-size: 32px;
+    margin-left: 250px;
+    margin-top: -70px;
+    font-family: myFont;
+  }
+
+  .dibawah {
+    color: white;
+    font-size: 15px;
+    margin-left: 250px;
+    margin-top: -30px;
+    font-family: myFont;
+  }
+  /* footer */
+  footer {
+    position: relative;
+    background-color: #780000;
+    color: white;
+    font-family: "Poppins";
+    padding: 10px;
+    text-align: center;
+    top: 30px;
+    font-size: 15px;
+  }
+}
