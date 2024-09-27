@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about us</title>
+    <link rel="stylesheet" href="contactUs.css" />
+    <script src="index.js" defer></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="./aset/logoo.png" class="brand-title" />
+      <!-- hamburger menu -->
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="aboutUs-Page.html">about us</a></li>
+          <li><a href="contactUs.html">contact us</a></li>
+          <li><a href="promotion.html">promotion</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- logo -->
+    <sumo>
+      <div class="contact">
+        <img src="./aset/sumo-ramen.png" alt="log" class="sumo" />
+        <img src="./aset/logoo.png" alt="logo" class="logo-ramen" />
+        <p class="logo-des">we are ready to help you anytime</p>
+      </div>
+    </sumo>
+      
+
+
+    <!-- contact us -->
+<contact>
+  <Kanan>
+    <div cllas="kanan">
+      <p class="judul">GET IN TOUCH</p>
+      <p class="duaTuju">24/7 We will answer your questions and problems</p>
+    </div>
+  </Kanan>
+  
+  <form action="" method="get">
+    <label for="username" class="username">Full Name</label>
+    <input type="text" name="username" id="username" />
+    <br /><br /><br />
+    <label for="email" class="email">Email</label>
+    <input type="email" name="email" id="email" />
+    <br /><br /><br />
+    <label for="phone" class="phone">Phone Number</label>
+    <input type="number" name="phone" id="phone">
+    <br /><br /><br />
+    <label for="pre" class="pre">Peferences</label>
+    <input type="text" name="pre" id="pre" />
+    <br><br><br>
+    <input type="checkbox" name="agree" id="agree">
+    <label for="agree" class="setuju">I agree to receive newsletter</label>
+    <h4 id="error" style="color: red" class="error"></h4>
+  </form>
+  <button type="button" onclick="submit()" class="submit">Submit</button>
+</contact>
+    
+
+    <!-- footer -->
+    <footer>
+      <span>2023 ERamen &copy; | Created by Jonathan Lawrencio.</span>
+    </footer>
+  </body>
+</html>

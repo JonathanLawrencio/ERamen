@@ -1,0 +1,375 @@
+@font-face {
+  font-family: myFont;
+  src: url(./aset/japanesse.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff4d8;
+}
+
+/* navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #780000;
+  color: white;
+  font-family: myFont;
+  box-shadow: 0px 10px 7px rgb(133, 133, 133);
+}
+
+/* logo */
+.brand-title {
+  margin-top: px;
+  float: left;
+  width: 89px;
+  height: 45px;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  /* menghapus bulatan list */
+  list-style: none;
+}
+
+.navbar-links li a {
+  /* menghapus garis bawah */
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+/* saat nge hover mouse */
+.navbar-links li:hover {
+  background-color: rgb(27, 27, 27);
+  border-radius: 8px;
+}
+
+/* hamburger menu */
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  /* menampilkan tampilan default, jika dikecilkan maka baru akan keluar */
+  display: none;
+  /* agar bertumpuk menjadi tiga */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+/* logo */
+.daily-logo {
+  width: 350px;
+  height: 359px;
+  margin-top: 20px;
+  margin-left: 580px;
+  filter: drop-shadow(10px 10px 10px grey);
+}
+.daily-promo{
+  font-size: 44px;
+  font-family: myFont;
+  margin-left: 700px;
+  margin-top: -230px;
+  text-shadow: 0px 4px 5px grey;
+}
+/* daily sale: */
+
+.buy1get1 {
+  width: 1260px;
+  height: 195px;
+  background-color: black;
+  margin-left: 90px;
+  border-radius: 10px;
+  margin-top: 150px;
+  box-shadow: 0px 10px 5px rgb(137, 137, 137);
+}
+
+.promo {
+  width: 380px;
+  margin-top: 10px;
+}
+
+.tambah {
+  color: white;
+  font-size: 60px;
+  margin-top: -140px;
+  margin-left: 180px;
+  font-family: myFont;
+}
+
+.b1g1 {
+  color: white;
+  font-size: 64px;
+  margin-left: 500px;
+  margin-top: -150px;
+  font-family: myFont;
+}
+
+.dibawah {
+  color: white;
+  font-size: 24px;
+  margin-left: 500px;
+  margin-top: -60px;
+  font-family: myFont;
+}
+/* promotion: */
+/* shoyu ramen promotion */
+.promotion-banner {
+  width: 660px;
+  height: 214px;
+  background-color: black;
+  margin-left: 700px;
+  border-radius: 14px;
+  box-shadow: 2px 7px 10px rgb(105, 105, 105);
+}
+.shoyu-promotion {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.shoyu-promotion-des {
+  font-size: 36px;
+  font-family: myFont;
+  color: white;
+  margin-top: -160px;
+  margin-left: 280px;
+}
+
+.harga-shoyu {
+  font-size: 24px;
+  font-family: myFont;
+  color: white;
+  margin-left: 280px;
+}
+.harga-shoyu-2 {
+  font-size: 24px;
+  font-family: myFont;
+  color: #616161;
+  margin-left: 430px;
+  margin-top: -53px;
+}
+shoyu{
+  position: relative;
+  left: -660px;
+  top: 40px;
+}
+/* matcha promotion */
+.promotion2-banner {
+  width: 660px;
+  height: 214px;
+  background-color: black;
+  margin-left: 760px;
+  margin-top: -175px;
+  border-radius: 14px;
+  box-shadow: 2px 7px 10px rgb(105, 105, 105);
+}
+.matcha-promotion {
+  margin-left: 33px;
+  margin-top: px;
+  width: 150px;
+}
+
+.matcha-promotion-des {
+  font-size: 36px;
+  font-family: myFont;
+  color: white;
+  margin-top: -180px;
+  margin-left: 230px;
+}
+
+.harga-matcha {
+  font-size: 14px;
+  font-family: myFont;
+  color: white;
+  margin-left: 230px;
+  margin-top: -0px;
+}
+footer {
+  text-align: center;
+  background-color: #780000;
+  margin-top: 30px;
+  color: white;
+  font-family: "poppins";
+}
+/* @media queries berguna jika kondisi memenuhi 
+maka codingan didalamnnya akan dijalankan */
+@media only screen and (max-width: 768px)
+ {
+  nav{
+    font-size: 80.5%;
+  }
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    /* mengubah tampilan menjadi kebawah */
+    flex-direction: column;
+    /* sejajarkan ke kiri */
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  .daily-logo {
+    width: 350px;
+    height: 359px;
+    margin-top: 20px;
+    margin-left: 200px;
+    filter: drop-shadow(10px 10px 10px grey);
+  }
+  .daily-promo{
+    font-size: 44px;
+    font-family: myFont;
+    margin-left: 320px;
+    margin-top: -230px;
+    text-shadow: 0px 4px 5px grey;
+  }
+  /* b1g1 promo */
+  .buy1get1 {
+    width: 660px;
+    height: 195px;
+    background-color: black;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-shadow: 0px 10px 5px rgb(137, 137, 137);
+  }
+  
+  .promo {
+    width: 280px;
+    margin-top: 30px;
+  }
+  
+  .tambah {
+    color: white;
+    font-size: 40px;
+    margin-top: -100px;
+    margin-left: 132px;
+    font-family: myFont;
+  }
+  
+  .b1g1 {
+    color: white;
+    font-size: 28px;
+    margin-left: 300px;
+    margin-top: -95px;
+    font-family: myFont;
+  }
+  
+  .dibawah {
+    color: white;
+    font-size: 16px;
+    margin-left: 300px;
+    margin-top: -10px;
+    font-family: myFont;
+  }
+  /* shoyu */
+  .promotion-banner {
+    width: 660px;
+    height: 195px;
+    background-color: black;
+    margin-left: 710px;
+    border-radius: 14px;
+    box-shadow: 2px 7px 10px rgb(105, 105, 105);
+  }
+  .shoyu-promotion-des {
+    font-size: 28px;
+    font-family: myFont;
+    color: white;
+    margin-top: -140px;
+    margin-left: 300px;
+  }
+  
+  .harga-shoyu {
+    font-size: 16px;
+    font-family: myFont;
+    color: white;
+    margin-left: 300px;
+  }
+  .harga-shoyu-2 {
+    font-size: 16px;
+    font-family: myFont;
+    color: #616161;
+    margin-left: 390px;
+    margin-top: -35px;
+  }
+  .shoyu-promotion {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  /* matcha */
+  .promotion2-banner {
+    width: 660px;
+    height: 195px;
+    background-color: black;
+    margin-left: 50px;
+    margin-top: 70px;
+    border-radius: 14px;
+    box-shadow: 2px 7px 10px rgb(105, 105, 105);
+  }
+  .matcha-promotion {
+    margin-left: 33px;
+    margin-top: px;
+    width: 150px;
+  }
+  
+  .matcha-promotion-des {
+    font-size: 28px;
+    font-family: myFont;
+    color: white;
+    margin-top: -160px;
+    margin-left: 230px;
+  }
+  
+  .harga-matcha {
+    font-size: 14px;
+    font-family: myFont;
+    color: white;
+    margin-left: 230px;
+    margin-top: -0px;
+  }
+}
